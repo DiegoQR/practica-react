@@ -1,5 +1,11 @@
-function App() {
-  return <div className="App">Sumador</div>;
-}
+import React, { Component } from "react";
+import PrincipalMenu from "./components/principalMenu";
 
+class App extends Component {
+  render() {
+    return(
+      <PrincipalMenu />
+    );
+  }
+}
 export default App;
