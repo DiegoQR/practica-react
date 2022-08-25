@@ -1,10 +1,11 @@
 import React from "react";
 
 export default function Kid(props){
-    const child = props.child;
+    const { child, ...rest } = props.child;
+    const key = rest.key;
 
     return (
-        <li class="list-group-item">
+        <li class="list-group-item" key={key}>
             <div class="media align-items-lg-center flex-column flex-lg-row p-3">
                 <div class="media-body order-2 order-lg-1">
                     <h5 class="mt-0 font-weight-bold mb-2">{child.name}</h5>
